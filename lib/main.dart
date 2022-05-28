@@ -28,14 +28,14 @@ class _MyApp extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.amber[200],
+          backgroundColor: Color.fromARGB(255, 130, 168, 255),
           leading: Row(
             children: <Widget>[
               SizedBox(
                 width: 5.0,
               ),
               IconButton(
-                color: Colors.white,
+                color: Color.fromARGB(255, 37, 108, 230),
                 icon: const Icon(
                   Icons.arrow_back,
                 ),
@@ -47,7 +47,7 @@ class _MyApp extends State<MyApp> {
             IconButton(
               icon: const Icon(
                 Icons.shopping_cart,
-                color: Colors.white,
+                color: Color.fromARGB(255, 37, 230, 211),
               ),
               onPressed: () {},
             ),
@@ -56,7 +56,7 @@ class _MyApp extends State<MyApp> {
             ),
           ],
         ),
-        backgroundColor: Colors.amber[200],
+        backgroundColor: Color.fromARGB(255, 130, 168, 255),
         body: ListView(
           children: <Widget>[
             Column(
@@ -70,7 +70,7 @@ class _MyApp extends State<MyApp> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromARGB(76, 110, 254, 232),
                       borderRadius: new BorderRadius.only(
                         topLeft: const Radius.circular(50.0),
                         topRight: const Radius.circular(50.0),
@@ -88,14 +88,14 @@ class _MyApp extends State<MyApp> {
                             height: 20.0,
                           ),
                           Text(
-                            'Mango',
+                            'Sandia',
                             style: TextStyle(
                                 fontSize: 30.0, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
-                          Text('1 each'),
+                          Text('1 buscar'),
                           SizedBox(
                             height: 20.0,
                           ),
@@ -104,7 +104,7 @@ class _MyApp extends State<MyApp> {
                             height: 30.0,
                           ),
                           Text(
-                            'Product Description',
+                            'Descripcion del producto',
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -112,10 +112,10 @@ class _MyApp extends State<MyApp> {
                             height: 15.0,
                           ),
                           Text(
-                            'A mango is a type of fruit. '
-                            'The mango tree is native to South Asia, '
-                            'from where it has been taken to become one of the most widely cultivated fruits in the tropics.'
-                            'It is harvested in the month of march (summer season) till the end of May.',
+                            'La sandía es un fruto grande y de forma más o menos esférica que suele consumirse '
+                            'cruda como postre. Su pulpa es de color rojizo o amarillento y de sabor dulce. Resulta'
+                            'un alimento muy refrescante que aporta muy pocas calorías al organismo, también'
+                            'aporta algunas vitaminas y minerales.',
                             style:
                                 TextStyle(letterSpacing: 2.0, fontSize: 15.0),
                           ),
@@ -127,22 +127,27 @@ class _MyApp extends State<MyApp> {
                               ButtonTheme(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  //side: BorderSide(color: Colors.amber[200]),
+                                  side: BorderSide(
+                                      color: Color.fromARGB(255, 77, 189, 211)),
                                 ),
                                 height: 70.0,
                                 child: RaisedButton(
-                                  color: Colors.white,
+                                  color: Color.fromARGB(255, 79, 240, 255),
                                   elevation: 0.0,
-                                  /*child: IconButton(
-                                      icon: _isFavorited
-                                          ? Icon(
-                                              Icons.favorite_border,
-                                              color: Colors.amber[300],
-                                            )
-                                          : Icon(
-                                              Icons.favorite,
-                                              color: Colors.amber[300],
-                                            )), */
+                                  child: IconButton(
+                                    icon: _isFavorited
+                                        ? Icon(
+                                            Icons.favorite_border,
+                                            color: Color.fromARGB(
+                                                255, 79, 120, 255),
+                                          )
+                                        : Icon(
+                                            Icons.favorite,
+                                            color: Color.fromARGB(
+                                                255, 79, 120, 255),
+                                          ),
+                                    onPressed: () {},
+                                  ),
                                   onPressed: _toggleFavorite,
                                 ),
                               ),
@@ -156,10 +161,10 @@ class _MyApp extends State<MyApp> {
                                 minWidth: 260.0,
                                 child: RaisedButton(
                                   elevation: 0.0,
-                                  color: Colors.amber[300],
+                                  color: Color.fromARGB(255, 79, 240, 255),
                                   onPressed: () {},
                                   child: Text(
-                                    'Add to cart',
+                                    'Añadir al carro',
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                   ),

@@ -31,7 +31,7 @@ class _CounterDesign extends State<CounterDesign> {
         Container(
           width: 155.0,
           decoration: BoxDecoration(
-            color: Colors.blueGrey[50],
+            color: Color.fromARGB(255, 73, 182, 255),
             borderRadius: BorderRadius.circular(20.0),
           ),
           child: Row(
@@ -72,7 +72,7 @@ class _CounterDesign extends State<CounterDesign> {
         ),
         Container(
             child: Text(
-          'Rs $_amt',
+          'Cantidad $_amt',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 30.0,

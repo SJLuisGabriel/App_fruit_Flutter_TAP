@@ -2,9 +2,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 final List<String> imgList = [
-  "assets/bananas.png",
-  "assets/mango2.png",
-  "assets/more apple.png"
+  "assets/cereza.png",
+  "assets/fresa.png",
+  "assets/sandia.png"
 ];
 
 class CarouselWithIndicatorDemo extends StatefulWidget {
@@ -47,8 +47,8 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: _current == index
-                  ? Color.fromRGBO(0, 0, 0, 0.9)
-                  : Color.fromRGBO(0, 0, 0, 0.4),
+                  ? Color.fromARGB(228, 255, 0, 0)
+                  : Color.fromARGB(102, 92, 255, 184),
             ),
           );
         }).toList(),
